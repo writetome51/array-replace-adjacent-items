@@ -60,3 +60,11 @@ console.log(arr);
 
 // should trigger error:
 //  _replaceAdjacentItems(1, 1, [], {}); // must be array
+
+
+// should trigger error:
+//  _replaceAdjacentItems(5, 6, [1, 2], arr);
+
+
+// should trigger error:
+//  _replaceAdjacentItems(-5, 6, [1, 2], arr);

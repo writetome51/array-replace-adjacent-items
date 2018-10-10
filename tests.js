@@ -24,14 +24,18 @@ _replaceAdjacentItems_1._replaceAdjacentItems(-6, 4, [[1]], arr);
 console.log(arr);
 // -> [ 50, 'x', 'y', 'z', 'a', 'b', 3, [ 1 ], 'z', 9 ]
 // should trigger error:
-//  _replaceAdjacentItems(11, 4, [], arr);
+//  _replaceAdjacentItems(11, 4, [], arr); // invalid index
 // should trigger error:
-//  _replaceAdjacentItems(1, 0, [], arr);
+//  _replaceAdjacentItems(1, 0, [], arr); // 0 items to replace
 // should trigger error:
-//  _replaceAdjacentItems('', 1, [], arr);
+//  _replaceAdjacentItems('', 1, [], arr); // must be integer
 // should trigger error:
-//  _replaceAdjacentItems(1, '', [], arr);
+//  _replaceAdjacentItems(1, '', [], arr); // must be integer
 // should trigger error:
-//  _replaceAdjacentItems(1, 1, {}, arr);
+//  _replaceAdjacentItems(1, 1, {}, arr); // must be array
 // should trigger error:
-//  _replaceAdjacentItems(1, 1, [], {});
+//  _replaceAdjacentItems(1, 1, [], {}); // must be array
+// should trigger error:
+//  _replaceAdjacentItems(5, 6, [1, 2], arr);
+// should trigger error:
+//  _replaceAdjacentItems(-5, 6, [1, 2], arr);

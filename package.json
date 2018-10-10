@@ -1,6 +1,6 @@
 {
   "name": "@writetome51/array-replace-adjacent-items",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Better alternative to Array.splice() for replacing adjacent array items",
   "main": "",
   "scripts": {
@@ -13,8 +13,9 @@
   "keywords": [
     "array",
     "manipulation",
-    "indexes",
-    "data"
+    "find",
+    "replace",
+    "items"
   ],
   "author": "Steve Thompson",
   "license": "MIT",
