@@ -1,14 +1,14 @@
 {
   "name": "@writetome51/array-replace-adjacent-items",
   "version": "1.0.0",
-  "description": "array-handling functions that return indexes of items in the array",
+  "description": "Better alternative to Array.splice() for replacing adjacent array items",
   "main": "",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/writetome51/array-get-indexes.git"
+    "url": "git+https://github.com/writetome51/array-replace-adjacent-items.git"
   },
   "keywords": [
     "array",
@@ -18,10 +18,7 @@
   ],
   "author": "Steve Thompson",
   "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/writetome51/array-get-indexes/issues"
-  },
-  "homepage": "https://github.com/writetome51/array-get-indexes#readme",
+  "homepage": "https://github.com/writetome51/array-replace-adjacent-items#readme",
   "devDependencies": {},
   "dependencies": {
     "basic-data-handling": "latest",

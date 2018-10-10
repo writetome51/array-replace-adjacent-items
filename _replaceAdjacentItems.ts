@@ -4,7 +4,7 @@ import { ifIndexValid_getActionResult }
 	from '@writetome51/array-and-index-validation/ifIndexValid_getActionResult';
 
 // Use this function as a more reliable alternative to Array.splice() when only
-// replacing  items in the array. If numItemsToReplace is less than 1, it triggers error.
+// replacing items in the array. If numItemsToReplace is less than 1, it triggers error.
 // startingIndex can be negative or positive.
 
 export function _replaceAdjacentItems(startingIndex, numItemsToReplace, newValues: any[], arrayToModify): void {
