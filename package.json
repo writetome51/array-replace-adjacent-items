@@ -1,6 +1,6 @@
 {
   "name": "@writetome51/array-replace-adjacent-items",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Better alternative to Array.splice() for replacing adjacent array items",
   "main": "",
   "scripts": {
