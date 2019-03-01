@@ -5,7 +5,7 @@ var errorIfNotArray_1 = require("basic-data-handling/errorIfNotArray");
 var errorIfArrayTooShortToMeetAdjacentItemsRequest_1 = require("@writetome51/array-and-index-validation/errorIf/errorIfArrayTooShortToMeetAdjacentItemsRequest");
 var errorIfIndexNotValid_1 = require("@writetome51/array-and-index-validation/errorIf/errorIfIndexNotValid");
 // Use this function as a more reliable alternative to Array.splice() when only
-// replacing items in the array. If numItemsToReplace is less than 1, it triggers error.
+// replacing items in the array.
 // startingIndex can be negative or positive.
 function _replaceAdjacentItems(startingIndex, numItemsToReplace, newValues, arrayToModify) {
     errorIfIndexNotValid_1.errorIfIndexNotValid(startingIndex, arrayToModify);

@@ -5,7 +5,7 @@ import { errorIfArrayTooShortToMeetAdjacentItemsRequest }
 import { errorIfIndexNotValid } from '@writetome51/array-and-index-validation/errorIf/errorIfIndexNotValid';
 
 // Use this function as a more reliable alternative to Array.splice() when only
-// replacing items in the array. If numItemsToReplace is less than 1, it triggers error.
+// replacing items in the array.
 // startingIndex can be negative or positive.
 
 export function _replaceAdjacentItems(startingIndex, numItemsToReplace, newValues: any[], arrayToModify): void {
