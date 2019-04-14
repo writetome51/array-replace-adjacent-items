@@ -1,17 +1,17 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-var errorIfNotInteger_1 = require("basic-data-handling/errorIfNotInteger");
-var errorIfNotArray_1 = require("basic-data-handling/errorIfNotArray");
-var errorIfArrayTooShortToMeetAdjacentItemsRequest_1 = require("@writetome51/array-and-index-validation/errorIf/errorIfArrayTooShortToMeetAdjacentItemsRequest");
-var errorIfIndexNotValid_1 = require("@writetome51/array-and-index-validation/errorIf/errorIfIndexNotValid");
+var error_if_not_integer_1 = require("error-if-not-integer");
+var error_if_not_array_1 = require("error-if-not-array");
+var error_if_array_too_short_to_meet_adjacent_items_request_1 = require("error-if-array-too-short-to-meet-adjacent-items-request");
+var error_if_index_not_valid_1 = require("error-if-index-not-valid");
 // Use this function as a more reliable alternative to Array.splice() when only
 // replacing items in the array.
 // startingIndex can be negative or positive.
 function _replaceAdjacentItems(startingIndex, numItemsToReplace, newValues, arrayToModify) {
-    errorIfIndexNotValid_1.errorIfIndexNotValid(startingIndex, arrayToModify);
-    errorIfNotInteger_1.errorIfNotInteger(numItemsToReplace);
-    errorIfNotArray_1.errorIfNotArray(newValues);
-    errorIfArrayTooShortToMeetAdjacentItemsRequest_1.errorIfArrayTooShortToMeetAdjacentItemsRequest(startingIndex, numItemsToReplace, arrayToModify);
+    error_if_index_not_valid_1.errorIfIndexNotValid(startingIndex, arrayToModify.length);
+    error_if_not_integer_1.errorIfNotInteger(numItemsToReplace);
+    error_if_not_array_1.errorIfNotArray(newValues);
+    error_if_array_too_short_to_meet_adjacent_items_request_1.errorIfArrayTooShortToMeetAdjacentItemsRequest(startingIndex, numItemsToReplace, arrayToModify.length);
     if (numItemsToReplace > 0)
         arrayToModify.splice.apply(arrayToModify, [startingIndex, numItemsToReplace].concat(newValues));
     else
