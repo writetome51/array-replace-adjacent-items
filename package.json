@@ -1,9 +1,10 @@
 {
   "name": "@writetome51/array-replace-adjacent-items",
-  "version": "1.0.5",
+  "version": "2.0.0",
   "description": "Better alternative to Array.splice() for replacing adjacent array items",
-  "main": "dist/index.js",
-  "types": "dist/index.d.ts",
+  "type": "module",
+  "main": "index.js",
+  "types": "index.d.ts",
   "scripts": {
     "build": "tsc"
   },
@@ -22,12 +23,10 @@
   "license": "MIT",
   "homepage": "https://github.com/writetome51/array-replace-adjacent-items#readme",
   "devDependencies": {
-    "@writetome51/arrays-match": "~1.0.6"
+    "@writetome51/arrays-match": "^2.0.1"
   },
   "dependencies": {
-    "error-if-not-integer": "~1.0.0",
-    "error-if-not-array": "~1.0.0",
-    "error-if-array-too-short-to-meet-adjacent-items-request": "~1.0.1",
-    "error-if-index-not-valid": "~1.0.0"
+    "error-if-array-too-short-to-meet-adjacent-items-request": "^2.0.0",
+    "error-if-index-how-many-or-array-are-not-valid": "^2.0.1"
   }
 }

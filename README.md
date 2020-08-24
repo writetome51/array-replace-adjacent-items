@@ -25,14 +25,10 @@ _replaceAdjacentItems(-4, 2, ['x', 'y', 'z'], arr);
 
 ## Installation
 ```bash
-npm install @writetome51/array-replace-adjacent-items
+npm i @writetome51/array-replace-adjacent-items
 ```
 
 ## Loading
-```
-// If using TypeScript:
-import {  _replaceAdjacentItems } from '@writetome51/array-replace-adjacent-items';
-// If using ES5 JavaScript:
-var  _replaceAdjacentItems = 
-    require('@writetome51/array-replace-adjacent-items')._replaceAdjacentItems;
+```js
+import { _replaceAdjacentItems } from '@writetome51/array-replace-adjacent-items';
 ```
